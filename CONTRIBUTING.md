@@ -7,7 +7,7 @@ Nós adoraríamos a sua ajuda para tornar o **DevSecOps Pipeline** ainda melhor!
 1. **Fork** este repositório e clone para sua máquina:
 
    ```bash
-   git clone https://github.com/seu-usuario/devsecops-workflows.git
+   git clone https://github.com/limaluizsecops-wq/devsecops-workflows.git
    ```
 
 2. **Crie uma branch** para sua feature ou correção:
