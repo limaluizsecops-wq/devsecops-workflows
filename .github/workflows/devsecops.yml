@@ -5,6 +5,23 @@ on:
         branches: ["**"]
     pull_request:
         branches: ["**"]
+    workflow_call:
+        inputs:
+            run_semgrep:
+                description: "Rodar Semgrep?"
+                required: false
+                default: true
+                type: boolean
+            run_trufflehog:
+                description: "Rodar TruffleHog?"
+                required: false
+                default: true
+                type: boolean
+            run_depscan:
+                description: "Rodar DepScan?"
+                required: false
+                default: true
+                type: boolean
 
 jobs:
     semgrep:
