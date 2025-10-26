@@ -89,4 +89,4 @@ jobs:
                   sudo tar xf scc.tar.gz -C /usr/local/bin scc
                   rm -f scc.tar.gz
             - name: Run SCC scan
-              run: scc --by-file --languages go,python,javascript,typescript --no-complexity
+              run: scc --by-file
