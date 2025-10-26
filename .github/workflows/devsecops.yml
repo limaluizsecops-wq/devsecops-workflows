@@ -77,3 +77,15 @@ jobs:
               with:
                   name: depscan-report
                   path: reports
+
+    scc-metrics:
+        name: SCC Metrics
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Install SCC
+              run: |
+                  curl -sSfL https://github.com/boyter/scc/releases/download/v3.0.1/scc-v3.0.1-linux-amd64.tar.gz | tar -xz
+                  sudo mv scc /usr/local/bin/
+            - name: Run SCC
+              run: scc --by-file
