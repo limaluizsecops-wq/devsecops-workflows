@@ -89,10 +89,4 @@ jobs:
                   sudo tar xf scc.tar.gz -C /usr/local/bin scc
                   rm -f scc.tar.gz
             - name: Run SCC scan
-              run: scc --by-file --languages go,python,javascript,typescript --no-complexity --csv > scc-report.csv
-
-            - name: Upload SCC report
-              uses: actions/upload-artifact@v4
-              with:
-                  name: scc-report
-                  path: scc-report.csvv
+              run: scc --by-file --languages go,python,javascript,typescript --no-complexity
